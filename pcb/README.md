@@ -15,7 +15,7 @@ Here is the BOM for the main board. Part number are what was tested on prototype
 |-----------------------|------------|----------|----------------------------------------|--------------------------|
 | C1, 2, 7, 9-10, 12-13 | 100nF      | 7        | ceramic capacitor 5.08mm               | Weltron 453358           |
 | C3                    | 6800pF     | 1        | film capacitor 5mm                     | Wima FKS2G016801B00KSSD  |
-| C8                    | 680pF      | 1        | film capacitor 5mm                     | Wima FKP2J006801D00HSSD  |
+| C6                    | 680pF      | 1        | film capacitor 5mm                     | Wima FKP2J006801D00HSSD  |
 | C4, C5, C8, C11       | 22uF       | 4        | aluminium electrolytic capacitor       | Panasonic ECA-1HHG220I   |
 | D1 to D6              | 1N4148     | 6        | general purpose switching diode        | Vishay 1N4148-TAP        |
 | D7                    | Red        | 1        | High efficiency 20000-30000mcd 5mm LED | TRU TC-10551696          |
