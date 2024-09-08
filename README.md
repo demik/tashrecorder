@@ -40,3 +40,8 @@ The LED flashes on when data is being received over the MIDI interface.
 ### Building Firmware
 
 Building the firmware requires Microchip MPASM, which is included with their development environment, MPLAB.  Note that you **must** use MPLAB X version 5.35 or earlier or MPLAB 8 as later versions of MPLAB X have removed MPASM.
+
+
+## Building Your Own
+
+1-Bit Fever Dreams on YouTube has made a helpful [video](https://www.youtube.com/watch?v=QnrPvtYhGZ4) detailing the process of building a TashRecorder using [demik's PCB](https://github.com/lampmerchant/tashrecorder/tree/main/pcb).
