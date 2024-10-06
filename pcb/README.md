@@ -42,7 +42,7 @@ Using sockets is recommended because it will allow you to reclaim the microcontr
 
 ### BOM (external links)
 Here is a complete mouser. It includes lots of 10 when that was cheaper. You may have extra components
-- https://www.mouser.fr/ProjectManager/ProjectDetail.aspx?AccessID=31409f3429
+- https://www.mouser.fr/ProjectManager/ProjectDetail.aspx?AccessID=d27bf9f90a
 
 ## PCBs
 Main PCB is 4 layers. Panels are simple 2 layers boards. The gerbers are avaible in the release section.
