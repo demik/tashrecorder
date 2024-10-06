@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TashRecorder")
-		(date "2024-06-02")
+		(date "2024-10-06")
 		(rev "2.1")
 		(company "Lostwave")
 		(comment 1 "https://68kmla.org/bb/index.php?threads/tashrecorder-a-farallon-macrecorder-compatible-clone.47645/#post-534733")
@@ -9069,10 +9069,10 @@
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 166.37 106.68 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5dae5460-7ac9-4311-a533-32c273564204")
 		(property "Reference" "J3"

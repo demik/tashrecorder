@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "TashRecorder")
-		(date "2024-06-02")
+		(date "2024-10-06")
 		(rev "2.1")
 		(company "Lostwave")
 		(comment 1 "https://68kmla.org/bb/index.php?threads/tashrecorder-a-farallon-macrecorder-compatible-clone.47645/#post-534733")
@@ -30,7 +30,6 @@
 		(38 "B.Mask" user)
 		(39 "F.Mask" user)
 		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
 		(44 "Edge.Cuts" user)
 		(45 "Margin" user)
 		(46 "B.CrtYd" user "B.Courtyard")
@@ -40,12 +39,14 @@
 		(stackup
 			(layer "F.SilkS"
 				(type "Top Silk Screen")
+				(color "White")
 			)
 			(layer "F.Paste"
 				(type "Top Solder Paste")
 			)
 			(layer "F.Mask"
 				(type "Top Solder Mask")
+				(color "Blue")
 				(thickness 0.01)
 			)
 			(layer "F.Cu"
@@ -54,6 +55,7 @@
 			)
 			(layer "dielectric 1"
 				(type "prepreg")
+				(color "FR4 natural")
 				(thickness 0.1)
 				(material "FR4")
 				(epsilon_r 4.5)
@@ -65,6 +67,7 @@
 			)
 			(layer "dielectric 2"
 				(type "core")
+				(color "FR4 natural")
 				(thickness 1.24)
 				(material "FR4")
 				(epsilon_r 4.5)
@@ -76,6 +79,7 @@
 			)
 			(layer "dielectric 3"
 				(type "prepreg")
+				(color "FR4 natural")
 				(thickness 0.1)
 				(material "FR4")
 				(epsilon_r 4.5)
@@ -87,6 +91,7 @@
 			)
 			(layer "B.Mask"
 				(type "Bottom Solder Mask")
+				(color "Blue")
 				(thickness 0.01)
 			)
 			(layer "B.Paste"
@@ -94,6 +99,7 @@
 			)
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
+				(color "White")
 			)
 			(copper_finish "None")
 			(dielectric_constraints no)
@@ -178,7 +184,7 @@
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e165c0d9-8d7e-47a3-923e-fd1814c6a3fb")
+			(uuid "833853bd-d5dc-46a0-905e-5a655d7996f1")
 			(effects
 				(font
 					(size 1 1)
@@ -189,7 +195,7 @@
 		(property "Value" "M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "977ab465-e560-488b-9c84-6d7b32da35ad")
+			(uuid "8c634935-f9cc-45c8-bd31-016adfd6dc9d")
 			(effects
 				(font
 					(size 1 1)
@@ -202,7 +208,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31c38e80-dd81-4319-bed9-de0b02d3a64a")
+			(uuid "e05f05f8-06b8-4a25-8a12-7cc5064279ed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -215,7 +221,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "215bbdc7-8495-4341-bf56-e090bc0b6cbc")
+			(uuid "d53e5d49-1733-4a7a-8d93-725b8e0fcde1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -228,7 +234,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "48598fb6-1fd9-4435-a97e-6b6ddc4c915f")
+			(uuid "953dd5c0-568a-425a-a09f-e80686eec62a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -239,8 +245,8 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-000060d0095c")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
-		(attr exclude_from_pos_files)
+		(sheetfile "TashRecorder.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -250,7 +256,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "1b771a40-69e8-46cd-aa4d-d84ccb6a5a06")
+			(uuid "b77dcd61-1235-426a-9f2a-dad00582280d")
 		)
 		(fp_circle
 			(center 0 0)
@@ -261,12 +267,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "27a40a65-7a5a-4d76-bb4c-840f77f59849")
+			(uuid "60c03033-738b-4a97-9c14-a07d9b9dfe36")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 0 0)
 			(layer "F.Fab")
-			(uuid "9c01a9b5-efc1-44be-a6d6-2947d43eb790")
+			(uuid "7ab098f1-28b4-4aa8-839d-e78b2df58e3c")
 			(effects
 				(font
 					(size 1 1)
@@ -280,7 +286,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "cb798b09-36ac-4c20-892c-b61fd00ddea0")
+			(uuid "2bbc9efd-d4bd-4cf7-bd02-14e2d6729e6d")
 		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
@@ -293,7 +299,7 @@
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "9ac4fad1-c15f-4aae-89d2-3f5eb2711604")
+			(uuid "0f2b6704-3de2-4e5c-ba19-1e506dd41877")
 			(effects
 				(font
 					(size 1 1)
@@ -304,7 +310,7 @@
 		(property "Value" "M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "faf259dd-c391-4366-94e1-b514567aaee6")
+			(uuid "63a7bfee-086b-4413-a447-369524e875b2")
 			(effects
 				(font
 					(size 1 1)
@@ -317,7 +323,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c10197ae-2638-4867-88d3-b2ae5cb7470b")
+			(uuid "09075de6-9d03-4977-b62b-db0d1923457b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -330,7 +336,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cb86ef2d-6fed-411d-91de-642c7d2ba514")
+			(uuid "4be207b5-c7db-4fb0-98c5-0466a1f744e0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -343,7 +349,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c4e4ef94-bc9f-4f2a-9104-34914053e474")
+			(uuid "c56b5ef6-1b39-4111-bcda-83c6f844b349")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -354,8 +360,8 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-000060d00876")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
-		(attr exclude_from_pos_files)
+		(sheetfile "TashRecorder.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -365,7 +371,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "5b44ecd8-5892-4262-95fc-71e1f471dd7c")
+			(uuid "97b22983-5579-4d9c-9d0c-94c1b5e27b2d")
 		)
 		(fp_circle
 			(center 0 0)
@@ -376,12 +382,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "68fb3f40-ba94-4b4f-99d8-e3b7d874eb79")
+			(uuid "d83f3a6d-4ede-4eae-8c44-d3ef174e60f7")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 0 0)
 			(layer "F.Fab")
-			(uuid "ddc4a0aa-ff99-44f7-8594-5e8f76821651")
+			(uuid "a473312b-a41d-49c0-b4bd-d6925cd9224f")
 			(effects
 				(font
 					(size 1 1)
@@ -395,7 +401,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "c49ff5b0-e00c-46e3-bc63-650eeacbcd91")
+			(uuid "6e96ca71-8980-445d-8980-3f84686b909b")
 		)
 	)
 	(footprint "MountingHole:MountingHole_3.2mm_M3_Pad"
@@ -408,7 +414,7 @@
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "68d4368c-002e-4630-b71a-89a26748389d")
+			(uuid "1f91db0a-d0be-4260-8aad-264479aafc7d")
 			(effects
 				(font
 					(size 1 1)
@@ -419,7 +425,7 @@
 		(property "Value" "M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "0f86fbfd-b734-4824-aa80-b4b9b6f10bd1")
+			(uuid "361ac299-7471-4970-8ffd-d7fdb530c30a")
 			(effects
 				(font
 					(size 1 1)
@@ -432,7 +438,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "08876b21-3027-45bd-a5ed-9609fd9f53b2")
+			(uuid "314d1407-b789-4b80-9358-2365d2e402d7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -445,7 +451,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9da7d28d-9b73-4660-a406-458ff04919f0")
+			(uuid "e41c6050-8deb-43ad-bc63-d464d1b868c3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -458,7 +464,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3f5ddbe0-7def-4ad2-b230-7a1586ad8b29")
+			(uuid "b23af13d-0e47-4af6-9d21-17c6bf9188a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -469,8 +475,8 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/00000000-0000-0000-0000-000060d012a8")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
-		(attr exclude_from_pos_files)
+		(sheetfile "TashRecorder.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -480,7 +486,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "f828259d-7c24-4684-900d-1c1475654142")
+			(uuid "30d2f259-58e5-4406-8448-af08840ac5f2")
 		)
 		(fp_circle
 			(center 0 0)
@@ -491,12 +497,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "17264462-efd5-4171-89f5-56c2132dfda7")
+			(uuid "40cebf76-76e6-4400-bb73-1b2d71547675")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0.3 0 0)
 			(layer "F.Fab")
-			(uuid "8197cdc0-6a86-4f96-913e-be0eb7aa9b6d")
+			(uuid "67b01b53-93c6-448f-8ac5-ad995871b0dd")
 			(effects
 				(font
 					(size 1 1)
@@ -510,7 +516,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "c30e77b5-1f95-4965-a8ce-41bcc56b163f")
+			(uuid "6569c9e1-d531-4c44-bddc-1e5a8b75e188")
 		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -583,7 +589,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/6c0cd6d4-e824-4228-a6b6-a35ec7246817")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 7.08 1.37)
@@ -858,7 +864,7 @@
 		(property ki_fp_filters "TO?92*Inline*")
 		(path "/5e8924dd-1852-405a-8934-3d2b07dcda65")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.53 1.85)
@@ -1095,7 +1101,7 @@
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/6fad2bc1-b63b-491b-aa6a-96e9178eee97")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.56 -1.33)
@@ -1429,7 +1435,7 @@
 		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/87d86212-6488-460d-a2bc-5698f1fc6814")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.56 -1.33)
@@ -1761,7 +1767,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/ed3a11f9-85f8-45bf-be09-97cb23a83ef4")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.29 -2.58)
@@ -3153,7 +3159,7 @@
 		)
 		(path "/5730b0b7-c66a-4367-a6d8-876b40a0b714")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.75 5.3)
@@ -3623,7 +3629,7 @@
 		(property ki_fp_filters "MINI?DIN*")
 		(path "/00000000-0000-0000-0000-000060afd47e")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start -5.7 -8.51)
@@ -3952,7 +3958,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/79a1ac3b-1e20-4531-a72d-a4527f70c0c7")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.77 1.055)
@@ -4207,7 +4213,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/ef53c107-88d6-4c06-9fa8-5ae6a0c05076")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.54 1.37)
@@ -4482,7 +4488,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/bfce639f-4b33-4a18-bd53-46a8f5e797d9")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 6.22 -2.37)
@@ -4717,7 +4723,7 @@
 		)
 		(path "/379051f3-5065-43e0-9dc7-31b1ad51d971")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2 -3.58)
@@ -4907,7 +4913,7 @@
 			(pintype "passive")
 			(uuid "999f2d02-92b9-44f6-9b18-6731ce80d22e")
 		)
-		(model "/Users/demik/github/MacRecorder/lib/CMA-4544PF-W.stp"
+		(model "${KIPRJMOD}/lib/CMA-4544PF-W.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4918,7 +4924,7 @@
 				(xyz 0 0 0)
 			)
 		)
-		(model "/Users/demik/github/MacRecorder/lib/CMA-4544PF-W.wrl"
+		(model "${KIPRJMOD}/lib/CMA-4544PF-W.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5000,7 +5006,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/0d2a0e74-15d5-4f55-9b43-5cc2dffc7942")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.54 -1.37)
@@ -5275,7 +5281,7 @@
 		(property ki_fp_filters "TO?92*Inline*")
 		(path "/281b01c0-1424-48e2-b85d-1904bacdfa95")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.53 1.85)
@@ -5512,7 +5518,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/88ca17bc-43bd-496e-a776-82e72ef83703")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.77 1.055)
@@ -5767,7 +5773,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/8c04ada1-ec26-4049-a5b4-60549e3a9fa4")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -5911,7 +5917,7 @@
 				)
 			)
 		)
-		(property "Value" "220k"
+		(property "Value" "220kΩ"
 			(at 1.27 2.37 180)
 			(layer "F.Fab")
 			(uuid "7e3de4c0-6849-4c91-bdf1-556ea7beee87")
@@ -5964,7 +5970,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/4d683fc1-e4af-46fa-bbac-aab1e701f3bc")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -6161,7 +6167,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060b0f8e6")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.77 1.055)
@@ -6416,7 +6422,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/b3fcfd41-f787-4132-9f16-53a25ef2eb58")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -6560,7 +6566,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "47Ω"
 			(at 1.27 2.37 0)
 			(layer "F.Fab")
 			(uuid "0908c60c-1a8a-4bbd-b11d-69caa407da1b")
@@ -6613,7 +6619,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b0ee69")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -6810,7 +6816,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/92a092f3-f12b-4d99-8dc9-eea79a9d904d")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.29 6.29)
@@ -7278,7 +7284,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060b38de3")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.77 1.055)
@@ -7533,7 +7539,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/30174a9a-7f37-41c5-80b6-37d1c4a71486")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -7730,7 +7736,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/75c6c00a-447c-456c-abfc-8bac70403bd8")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 6.22 -2.37)
@@ -7965,7 +7971,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/96e5d9cb-c737-4ee1-9bd9-7ad9fd11c518")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 7.08 -1.37)
@@ -8240,7 +8246,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/f5eca990-1484-43f7-beff-f45ff22f171a")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -8437,7 +8443,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/00000000-0000-0000-0000-000060b0e2eb")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.554775 -1.475)
@@ -9805,7 +9811,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/00000000-0000-0000-0000-000060b38dc0")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.554775 -1.475)
@@ -11120,7 +11126,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "47Ω"
 			(at 1.27 2.37 0)
 			(layer "F.Fab")
 			(uuid "c2388141-444c-4763-a2ad-478f68ed1de0")
@@ -11173,7 +11179,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/00000000-0000-0000-0000-000060b38dd7")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -11371,7 +11377,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/10fc69ac-a001-4ed5-8597-230c49c626f5")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -11568,7 +11574,7 @@
 		(property ki_fp_filters "D*SOD?323*")
 		(path "/00000000-0000-0000-0000-000060b03b9b")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 5.93 -1.12)
@@ -11927,7 +11933,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/0fae407c-caef-4640-95eb-bbbb09f28e6a")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 0.23 -1.07)
@@ -12182,7 +12188,7 @@
 		(property ki_fp_filters "D*SOD?323*")
 		(path "/817831c7-6967-4614-a502-5e81e3eec5a1")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.69 1.12)
@@ -12542,7 +12548,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060b38a6d")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.77 1.055)
@@ -12797,8 +12803,8 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5dae5460-7ac9-4311-a533-32c273564204")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
-		(attr through_hole)
+		(sheetfile "TashRecorder.kicad_sch")
+		(attr through_hole exclude_from_bom dnp)
 		(fp_line
 			(start -1.33 -1.33)
 			(end 0 -1.33)
@@ -13327,7 +13333,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/00000000-0000-0000-0000-000060b0acdd")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.77 1.055)
@@ -13582,7 +13588,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/097d6cb3-0f59-418b-bd91-1bc8624c130f")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.554775 -1.475)
@@ -14890,7 +14896,7 @@
 			(at 0 -4.2 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "b1b9f67a-057b-4d93-98ea-e0aa1b15c223")
+			(uuid "35088c09-ea1f-4789-8f2f-1dbc3556be2e")
 			(effects
 				(font
 					(size 1 1)
@@ -14901,7 +14907,7 @@
 		(property "Value" "M3"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "8f995ba4-1c0b-42e2-a7a7-495fd13f32d9")
+			(uuid "a95565cc-61af-45f2-8393-d619b05a70aa")
 			(effects
 				(font
 					(size 1 1)
@@ -14914,7 +14920,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "884a1eec-33e2-4012-a28c-12bd1f501afc")
+			(uuid "f9c4aba8-2fb4-4a81-868d-527ef0b56f91")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14927,7 +14933,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "14d25ecf-b432-48e7-852d-a36c9bc74fa0")
+			(uuid "edd2cf41-f182-4285-855d-e2834f41d557")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14940,7 +14946,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "53fd5824-55d4-4291-b2d2-e2cc6b8e800a")
+			(uuid "85bfd285-ebe3-4929-8780-1850b81d3185")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14951,8 +14957,8 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/1a98b67d-d936-4cc8-9f9b-4a0681621805")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
-		(attr exclude_from_pos_files)
+		(sheetfile "TashRecorder.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -14962,7 +14968,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "a7a61b98-1943-49c1-a83f-d2a218e2caee")
+			(uuid "64c141e8-273b-4340-bbe0-145cd63cff7a")
 		)
 		(fp_circle
 			(center 0 0)
@@ -14973,12 +14979,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "d2f6a741-0ace-40af-9a22-b4610c0344d7")
+			(uuid "ba68ff8d-58a8-4ac9-879b-ac72aff88d08")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "c5b489d2-2d61-42bd-b6d9-430f0e7daf70")
+			(uuid "56a77ad9-bdf0-4a1b-8fb9-f133b225c08a")
 			(effects
 				(font
 					(size 1 1)
@@ -14992,7 +14998,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "8a2a9cb2-22ce-4f48-a470-864dfc9863f1")
+			(uuid "586e7613-93a0-4d2b-b342-df529aeb0c63")
 		)
 	)
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
@@ -15065,7 +15071,7 @@
 		(property ki_fp_filters "D*SOD?323*")
 		(path "/00000000-0000-0000-0000-000060b08cf7")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.69 1.12)
@@ -15361,7 +15367,7 @@
 		(descr "PTD901-1015F-A203-4")
 		(tags "Variable Resistor")
 		(property "Reference" "RV1"
-			(at -1.5 -9 180)
+			(at -1.5 -9 0)
 			(layer "F.SilkS")
 			(uuid "1e719ec0-a400-4c3c-9741-5aa358bcc1ee")
 			(effects
@@ -15425,7 +15431,7 @@
 		(property ki_fp_filters "Potentiometer*")
 		(path "/969fa776-b3a3-49b2-a415-f848bd2d8f8e")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.05 2.25)
@@ -15924,6 +15930,17 @@
 				(xyz -90 0 90)
 			)
 		)
+		(model "${KIPRJMOD}/lib/PTD901-1015F-A203.stp"
+			(offset
+				(xyz 16.38 2.54 6.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 90)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -15995,7 +16012,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/93276e6e-53e4-4384-bdad-f852c046584c")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -16193,7 +16210,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/8cf9d60d-ead9-4226-b936-868ef3613f34")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.37 0)
@@ -16390,7 +16407,7 @@
 		)
 		(path "/54156629-54cd-4c1a-b8f6-39a1d41c46b3")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -2.9 -0.75)
@@ -16742,7 +16759,7 @@
 		(property ki_fp_filters "D*SOD?323*")
 		(path "/00000000-0000-0000-0000-000060b039d7")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 5.93 -1.12)
@@ -17424,7 +17441,7 @@
 		(property ki_fp_filters "D*SOD?323*")
 		(path "/00000000-0000-0000-0000-000060b08dcf")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.69 1.12)
@@ -17783,7 +17800,7 @@
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/83939170-bdac-4e8e-8385-6155dbe46a57")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(zone_connect 1)
 		(attr exclude_from_pos_files)
 		(fp_line
@@ -17955,7 +17972,7 @@
 		(property ki_fp_filters "D*SOD?323*")
 		(path "/1c9bdf04-3841-41e1-b13c-5ccf9f60a29d")
 		(sheetname "Racine")
-		(sheetfile "MacRecorder.kicad_sch")
+		(sheetfile "TashRecorder.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 5.93 -1.12)
@@ -23453,33 +23470,32 @@
 				(xy 134.425115 85.253795) (xy 134.362476 85.343252) (xy 134.362475 85.343254) (xy 134.265718 85.55075)
 				(xy 134.265714 85.550761) (xy 134.206457 85.77191) (xy 134.206456 85.771917) (xy 134.194674 85.906592)
 				(xy 134.169221 85.97166) (xy 134.112631 86.012639) (xy 134.042869 86.016517) (xy 133.983465 85.983465)
-				(xy 133 85) (xy 131.377431 85) (xy 131.310392 84.980315) (xy 131.306308 84.977575) (xy 131.152487 84.869868)
-				(xy 131.152483 84.869866) (xy 130.946326 84.773734) (xy 130.946319 84.773731) (xy 130.742651 84.719158)
-				(xy 130.687064 84.687064) (xy 130.508689 84.508689) (xy 130.475204 84.447366) (xy 130.480188 84.377674)
-				(xy 130.52206 84.321741) (xy 130.585563 84.29748) (xy 130.726599 84.285141) (xy 130.72661 84.285139)
-				(xy 130.946317 84.226269) (xy 130.946331 84.226264) (xy 131.152478 84.130136) (xy 131.225471 84.079024)
-				(xy 130.546447 83.4) (xy 130.552661 83.4) (xy 130.654394 83.372741) (xy 130.745606 83.32008) (xy 130.82008 83.245606)
-				(xy 130.872741 83.154394) (xy 130.9 83.052661) (xy 130.9 83.046447) (xy 131.579024 83.725471) (xy 131.630136 83.652478)
-				(xy 131.726264 83.446331) (xy 131.726269 83.446317) (xy 131.785139 83.22661) (xy 131.785141 83.226599)
-				(xy 131.804966 83.000002) (xy 131.804966 82.999998) (xy 134.186502 82.999998) (xy 134.186502 83.000001)
-				(xy 134.206456 83.228081) (xy 134.206457 83.228089) (xy 134.265714 83.449238) (xy 134.265718 83.449249)
-				(xy 134.303164 83.529552) (xy 134.362477 83.656749) (xy 134.493802 83.8443) (xy 134.6557 84.006198)
-				(xy 134.843251 84.137523) (xy 134.912899 84.17) (xy 135.05075 84.234281) (xy 135.050752 84.234281)
-				(xy 135.050757 84.234284) (xy 135.271913 84.293543) (xy 135.434832 84.307796) (xy 135.499998 84.313498)
-				(xy 135.5 84.313498) (xy 135.500002 84.313498) (xy 135.557021 84.308509) (xy 135.728087 84.293543)
-				(xy 135.949243 84.234284) (xy 136.156749 84.137523) (xy 136.3443 84.006198) (xy 136.506198 83.8443)
-				(xy 136.637523 83.656749) (xy 136.734284 83.449243) (xy 136.793543 83.228087) (xy 136.813498 83)
-				(xy 136.793543 82.771913) (xy 136.734284 82.550757) (xy 136.637523 82.343251) (xy 136.506198 82.1557)
-				(xy 136.3443 81.993802) (xy 136.156749 81.862477) (xy 136.156745 81.862475) (xy 135.949249 81.765718)
-				(xy 135.949238 81.765714) (xy 135.728089 81.706457) (xy 135.728081 81.706456) (xy 135.500002 81.686502)
-				(xy 135.499998 81.686502) (xy 135.271918 81.706456) (xy 135.27191 81.706457) (xy 135.050761 81.765714)
-				(xy 135.05075 81.765718) (xy 134.843254 81.862475) (xy 134.843252 81.862476) (xy 134.772856 81.911767)
-				(xy 134.6557 81.993802) (xy 134.655698 81.993803) (xy 134.655695 81.993806) (xy 134.493806 82.155695)
-				(xy 134.362476 82.343252) (xy 134.362475 82.343254) (xy 134.265718 82.55075) (xy 134.265714 82.550761)
-				(xy 134.206457 82.77191) (xy 134.206456 82.771918) (xy 134.186502 82.999998) (xy 131.804966 82.999998)
-				(xy 131.804966 82.999997) (xy 131.785141 82.7734) (xy 131.785139 82.773389) (xy 131.726269 82.553682)
-				(xy 131.726264 82.553668) (xy 131.630136 82.347521) (xy 131.630132 82.347513) (xy 131.579025 82.274526)
-				(xy 130.9 82.953551) (xy 130.9 82.947339) (xy 130.872741 82.845606) (xy 130.82008 82.754394) (xy 130.745606 82.67992)
+				(xy 133 85) (xy 131.051362 85) (xy 130.984323 84.980315) (xy 130.963681 84.963681) (xy 130.508689 84.508689)
+				(xy 130.475204 84.447366) (xy 130.480188 84.377674) (xy 130.52206 84.321741) (xy 130.585563 84.29748)
+				(xy 130.726599 84.285141) (xy 130.72661 84.285139) (xy 130.946317 84.226269) (xy 130.946331 84.226264)
+				(xy 131.152478 84.130136) (xy 131.225471 84.079024) (xy 130.546447 83.4) (xy 130.552661 83.4) (xy 130.654394 83.372741)
+				(xy 130.745606 83.32008) (xy 130.82008 83.245606) (xy 130.872741 83.154394) (xy 130.9 83.052661)
+				(xy 130.9 83.046447) (xy 131.579024 83.725471) (xy 131.630136 83.652478) (xy 131.726264 83.446331)
+				(xy 131.726269 83.446317) (xy 131.785139 83.22661) (xy 131.785141 83.226599) (xy 131.804966 83.000002)
+				(xy 131.804966 82.999998) (xy 134.186502 82.999998) (xy 134.186502 83.000001) (xy 134.206456 83.228081)
+				(xy 134.206457 83.228089) (xy 134.265714 83.449238) (xy 134.265718 83.449249) (xy 134.303164 83.529552)
+				(xy 134.362477 83.656749) (xy 134.493802 83.8443) (xy 134.6557 84.006198) (xy 134.843251 84.137523)
+				(xy 134.912899 84.17) (xy 135.05075 84.234281) (xy 135.050752 84.234281) (xy 135.050757 84.234284)
+				(xy 135.271913 84.293543) (xy 135.434832 84.307796) (xy 135.499998 84.313498) (xy 135.5 84.313498)
+				(xy 135.500002 84.313498) (xy 135.557021 84.308509) (xy 135.728087 84.293543) (xy 135.949243 84.234284)
+				(xy 136.156749 84.137523) (xy 136.3443 84.006198) (xy 136.506198 83.8443) (xy 136.637523 83.656749)
+				(xy 136.734284 83.449243) (xy 136.793543 83.228087) (xy 136.813498 83) (xy 136.793543 82.771913)
+				(xy 136.734284 82.550757) (xy 136.637523 82.343251) (xy 136.506198 82.1557) (xy 136.3443 81.993802)
+				(xy 136.156749 81.862477) (xy 136.156745 81.862475) (xy 135.949249 81.765718) (xy 135.949238 81.765714)
+				(xy 135.728089 81.706457) (xy 135.728081 81.706456) (xy 135.500002 81.686502) (xy 135.499998 81.686502)
+				(xy 135.271918 81.706456) (xy 135.27191 81.706457) (xy 135.050761 81.765714) (xy 135.05075 81.765718)
+				(xy 134.843254 81.862475) (xy 134.843252 81.862476) (xy 134.772856 81.911767) (xy 134.6557 81.993802)
+				(xy 134.655698 81.993803) (xy 134.655695 81.993806) (xy 134.493806 82.155695) (xy 134.362476 82.343252)
+				(xy 134.362475 82.343254) (xy 134.265718 82.55075) (xy 134.265714 82.550761) (xy 134.206457 82.77191)
+				(xy 134.206456 82.771918) (xy 134.186502 82.999998) (xy 131.804966 82.999998) (xy 131.804966 82.999997)
+				(xy 131.785141 82.7734) (xy 131.785139 82.773389) (xy 131.726269 82.553682) (xy 131.726264 82.553668)
+				(xy 131.630136 82.347521) (xy 131.630132 82.347513) (xy 131.579025 82.274526) (xy 130.9 82.953551)
+				(xy 130.9 82.947339) (xy 130.872741 82.845606) (xy 130.82008 82.754394) (xy 130.745606 82.67992)
 				(xy 130.654394 82.627259) (xy 130.552661 82.6) (xy 130.546448 82.6) (xy 131.225472 81.920974) (xy 131.152478 81.869863)
 				(xy 130.946331 81.773735) (xy 130.946317 81.77373) (xy 130.72661 81.71486) (xy 130.726599 81.714858)
 				(xy 130.500002 81.695034) (xy 130.499998 81.695034) (xy 130.2734 81.714858) (xy 130.273389 81.71486)
